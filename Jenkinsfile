@@ -26,6 +26,6 @@ node {
       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore install"
   }
     stage ('Deliver & Deployment') {
-      sh 'curl -u ravi:ravi@777 -T target/**.war "http://18.209.160.195:80/manager/text/deploy?path=/ravi&update=true"'
+      sh 'curl -u ravi:ravi@777 -T target/**.war "http://18.201.160.195:80/manager/text/deploy?path=/ravi&update=true"'
   }
 }
